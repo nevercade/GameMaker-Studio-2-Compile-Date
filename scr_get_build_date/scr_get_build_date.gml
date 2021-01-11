@@ -6,9 +6,9 @@ function scr_get_build_date(){
 var _buildday = date_get_day(GM_build_date);
 var _builddaystring = "";
 switch _buildday{
-case 0: _builddaystring = string(_buildday) + "st"; break;
-case 1: _builddaystring = string(_buildday) + "nd";break;
-case 2: _builddaystring = string(_buildday) + "rd";break;
+case 1: case 21: case 31: _builddaystring = string(_buildday) + "st"; break;
+case 2: case 22: _builddaystring = string(_buildday) + "nd";break;
+case 3: case 23: _builddaystring = string(_buildday) + "rd";break;
 default: _builddaystring = string(_buildday) + "th"; break;
 }
 
