@@ -29,7 +29,7 @@ case 9: _buildmonthstring="September" break;
 case 10: _buildmonthstring="October" break;
 case 11: _buildmonthstring="November" break;
 case 12: _buildmonthstring="December" break;
-default: _buildmonthstring="Build Error."; 
+default: _buildmonthstring="Invalid Month"; 
 }
 
 //put it all together with the year.
